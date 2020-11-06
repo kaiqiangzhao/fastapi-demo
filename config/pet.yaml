@@ -1,0 +1,7 @@
+Environment:
+  name_en: Performance Evaluation Test
+  name_zh: 测试环境(性能评估测试)
+
+Project:
+  host: http://egg-pet.coremap.cn
+  port: 2333

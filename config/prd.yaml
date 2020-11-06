@@ -1,0 +1,7 @@
+Environment:
+  name_en: Production
+  name_zh: 生产环境
+
+Project:
+  host: http://egg.coremap.cn
+  port: 2333

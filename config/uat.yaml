@@ -1,0 +1,7 @@
+Environment:
+  name_en: User Acceptance Test
+  name_zh: 测试环境(用户验收测试)
+
+Project:
+  host: http://egg-uat.coremap.cn
+  port: 2333
