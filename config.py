@@ -33,7 +33,7 @@ class Config(BaseConfig):
 
     @property
     def DEBUG(self):
-        return self._config.get("project", "debug")
+        return self._config.getboolean("project", "debug")
 
     @property
     def PROJECT_VERSION(self):
@@ -49,7 +49,7 @@ class Config(BaseConfig):
 
     @property
     def PORT(self):
-        return self._config.get("project", "port")
+        return self._config.getint("project", "port")
 
 
 class DevelopmentConfig(Config):
