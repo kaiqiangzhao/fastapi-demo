@@ -1,7 +1,0 @@
-Environment:
-  name_en: Development
-  name_zh: 开发环境
-
-Project:
-  host: http://127.0.0.1
-  port: 2333

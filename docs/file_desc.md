@@ -21,8 +21,12 @@ setup.py 未知
 
 Makefile 未知
 
+settings.py 系统变量配置
+
 .gitingore 不加入版本控制的文件设置
+
+requirements.txt 环境依赖
 
 README.md 项目介绍
 
-requirements.txt 环境依赖
+
