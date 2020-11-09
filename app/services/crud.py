@@ -4,7 +4,7 @@
 
 from sqlalchemy.orm import Session
 from app.models import users
-from app.validations import schemas
+from app.schemas import users as schemas
 
 
 def get_user(db: Session, user_id: int):

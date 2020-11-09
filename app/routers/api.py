@@ -3,7 +3,7 @@
 # @Author: kaiqiang.zhao
 
 from fastapi import APIRouter
-from app.controllers import users
+from app.routers import users
 from app.constants.api import API_PREFIX
 
 router = APIRouter()

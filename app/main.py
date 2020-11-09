@@ -3,14 +3,14 @@
 # @Author: kaiqiang.zhao
 
 from fastapi import FastAPI
-from app.controllers.api import router as api_router
-from config import config
+from app.routers.api import router
+from app.core.config import settings
 
 
-def create_application() -> FastAPI:
-    application = FastAPI(title=config.PROJECT_NAME, debug=config.DEBUG, version=config.PROJECT_VERSION)
-    application.include_router(router=api_router)
+def create_app() -> FastAPI:
+    application = FastAPI(title=settings.app_name)
+    application.include_router(router=router)
     return application
 
 
-app = create_application()
+app = create_app()
