@@ -6,7 +6,7 @@ from typing import List
 from fastapi import Depends, HTTPException, APIRouter
 from sqlalchemy.orm import Session
 from app.schemas import users as user_schemas
-from app.mservices import crud
+from app.services import crud
 from app.core.session import SessionLocal
 
 
