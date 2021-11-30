@@ -4,7 +4,7 @@
 
 import os
 from fastapi import FastAPI
-from app.routers.api import router
+from app.router.api import router
 from app.core.config import settings
 from fastapi.staticfiles import StaticFiles
 

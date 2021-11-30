@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     web_dir_path: str
 
     class Config:
-        env_file = ".env.example"
+        env_file = ".env"
 
 
 settings = Settings()

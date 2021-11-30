@@ -3,9 +3,10 @@
 # @Author: kaiqiang.zhao
 
 from fastapi import APIRouter
-from app.routers import users, template
+from app.router import user, template, item
 from app.const.api import API_PREFIX
 
 router = APIRouter()
-router.include_router(users.router, prefix=API_PREFIX)
+router.include_router(user.router, prefix=API_PREFIX)
+router.include_router(item.router, prefix=API_PREFIX)
 router.include_router(template.router, prefix="")

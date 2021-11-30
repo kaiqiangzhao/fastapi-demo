@@ -2,4 +2,5 @@
 # @Author: kaiqiang.zhao
 
 from app.core.database import Base
-from app.models.users import User, Item
+from app.model.user import User
+from app.model.item import Item
