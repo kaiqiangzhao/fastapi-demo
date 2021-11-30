@@ -12,15 +12,15 @@ website: https://fastapi.tiangolo.com/
 
 ### 快速开始
 
-环境 :重命名 `.env.example` 为 `.env`
+**环境** :重命名 `.env.example` 为 `.env`
 
-启动
+**启动**
 
 ```shell script
 uvicorn app.main:app --reload
 ```
 
-迁移 
+**迁移** 
 
 新建model, 需要导入到`app/models/base.py`文件内
 
@@ -63,7 +63,7 @@ alembic upgrade head
 ```
 项目共分为四层：router -> service -> curd -> model
 
-也可以将curd和model合并，将curd的代码写到model，但一定要保证一个py文件只保护一个model的定义，否则之后文件代码增长的很快
+也可以将curd和model合并，将curd的代码写到model，但一定要保证一个py文件只保存一个model的定义，否则之后文件代码增长的很快
 
 ### 其他
 #### Uvicorn
