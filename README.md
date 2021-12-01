@@ -17,6 +17,10 @@ website: https://fastapi.tiangolo.com/
 **启动**
 
 ```shell script
+python runserver.py  // 将uvicore启动的命令封装到了runserver里
+```
+或
+```shell script
 uvicorn app.main:app --reload
 ```
 

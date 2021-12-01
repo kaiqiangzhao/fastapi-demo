@@ -5,12 +5,12 @@
 import os
 from fastapi import FastAPI
 from app.router.api import router
-from app.core.config import settings
+from config import settings
 from fastapi.staticfiles import StaticFiles
 
 
 def create_app() -> FastAPI:
-    application = FastAPI(title=settings.app_name)
+    application = FastAPI(title=settings.app_name, debug=settings.debug)
     application.include_router(router=router)
     return application
 

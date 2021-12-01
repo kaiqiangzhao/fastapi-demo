@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author: kaiqiang.zhao
 
-from app.core.config import settings
+from config import settings
 from fastapi.templating import Jinja2Templates
 
 template = Jinja2Templates(directory=settings.web_dir_path)
